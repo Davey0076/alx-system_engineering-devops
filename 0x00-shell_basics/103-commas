@@ -1,2 +1,3 @@
 #!/bin/bash
-ls -p -a -ct -n -m
+ls -p -A | sort -d --ignore-case --version-sort | tr '\n' ','; echo
+
